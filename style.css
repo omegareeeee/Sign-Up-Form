@@ -1,0 +1,42 @@
+
+
+*{
+    margin: 0;
+}
+
+.imageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url(images/citySkyline.avif);
+    height: 100vh;
+}
+
+.odinSignUp{
+    font-family: Norse;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, .6);
+    padding: 10px;
+}
+img[alt="odin"]{
+    height: 8em;
+}
+.imageContainer h1{
+    color: white;
+    font-size: 6em;
+}
+.credit{
+    color: rgb(250, 250, 250, .6);
+    position: absolute;
+    bottom: 0;
+    right: 5px; 
+    font-family: Kiona;
+    font-weight: bold;
+}
+
+.link{
+    color: rgb(250, 250, 250, .6);
+}
