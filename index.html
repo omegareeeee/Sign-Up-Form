@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Sign Up Page</title>
 </head>
@@ -19,41 +20,45 @@
     </div>
 
     <div class="content">
-        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
-        <form action="/" method="get">
-            <fieldset>
-                <legend>Let's do this!</legend>
-                
-                <div class="input-container">
-                    <label for="first-name">FIRST NAME*</label>
-                    <input type="text" required>
+        <p class="text description">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started.</p>
+        <p class="text description">You <em>know</em> you want to.</p>
+        <form action="/" method="get">         
+            <div class="container">
+                <h1 class="text">Let's do this!</h1>
+                <div class="form-row">
+                    <div class="input-container">
+                         <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" minlength="1" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" minlength="1" required>
+                    </div>
                 </div>
-
-                <div class="input-container">
-                    <label for="last-name">LAST NAME*</label>
-                    <input type="text" required>
+                <div class="form-row">
+                    <div class="input-container">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" id="phone-number" name="phone-number">
+                    </div>
                 </div>
-
-                <div class="input-container">
-                    <label for="email">EMAIL*</label>
-                    <input type="email" required>
+                <div class="form-row">
+                    <div class="input-container">
+                        <label for="password"> PASSWORD</label>
+                        <input type="password" id="password" name="password" minlength="5" maxlength="20" required>
+                    </div>
+                    <div class="input-container">
+                        <lable for="password-confirm">CONFIRM PASSWORD</lable>
+                        <input type="password" id="password-confirm" name="password-confirm" required>
+                    </div>
                 </div>
-
-                <div class="input-container">
-                    <label for="phone-number">PHONE NUMBER</label>
-                    <input type="tel">
-                </div>
-
-                <div class="input-container">
-                    <label for="password"> PASSWORD*</label>
-                    <input type="password" required>
-                </div>
-
-            </fieldset>
-
+            </div>
             <button type="submit">Create Account</button>
         </form>
-        <p>Already have an account? <a href="">Log in</a></p>
+        <p class="text">Already have an account? <a href="" class="log-in">Log in</a></p>
     </div>
 </body>
 </html>
