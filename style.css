@@ -15,8 +15,8 @@ body, html{
     justify-content: center;
     background: url(images/citySkyline.avif);
     background-size: cover;
-    height: 100vh;
-    width: 40rem;
+    background-position: center;
+    flex: 3;
 }
 
 .odinSignUp{
@@ -52,10 +52,10 @@ img[alt="odin"]{
     font-family: var(--clean-font);
 }
 .description{
+
     font-size: 1.5rem;
     line-height: 2rem;
-    max-height:  4rem;
-    max-width: 45rem;
+    max-width: 80%;
 }
 input, label {
     display:block;
@@ -65,7 +65,7 @@ input, label {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80rem;
+    flex: 5;
 }
 .content p, .container{
     padding-left: 45px;
